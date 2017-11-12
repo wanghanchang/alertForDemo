@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MyView">
+            <rect key="frame" x="0.0" y="0.0" width="200" height="300"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="psw-bq-vMY">
+                    <rect key="frame" x="30" y="10" width="140" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZcE-UM-Vhz">
+                    <rect key="frame" x="40" y="230" width="46" height="30"/>
+                    <state key="normal" title="quxiao"/>
+                </button>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="alh-bB-hDZ">
+                    <rect key="frame" x="100" y="51" width="25" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B8B-LT-PNs">
+                    <rect key="frame" x="225" y="51" width="44" height="44"/>
+                    <color key="backgroundColor" red="0.74321496970000001" green="1" blue="0.44711343510000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="X1t-gb-xeR"/>
+                        <constraint firstAttribute="width" constant="44" id="fkR-sG-6tG"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e1b-LL-N8d">
+                    <rect key="frame" x="107" y="230" width="53" height="30"/>
+                    <state key="normal" title="confirm"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.81535378886010368" green="0.81535378886010368" blue="0.81535378886010368" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="alh-bB-hDZ" firstAttribute="top" secondItem="psw-bq-vMY" secondAttribute="bottom" constant="20" id="1Sr-ng-kqT"/>
+                <constraint firstAttribute="bottom" secondItem="e1b-LL-N8d" secondAttribute="bottom" constant="40" id="1Z0-60-eUH"/>
+                <constraint firstItem="alh-bB-hDZ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="100" id="4PV-26-qqK"/>
+                <constraint firstItem="ZcE-UM-Vhz" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="40" id="81U-tU-DYk"/>
+                <constraint firstAttribute="bottom" secondItem="ZcE-UM-Vhz" secondAttribute="bottom" constant="40" id="8Xo-dI-bPD"/>
+                <constraint firstItem="B8B-LT-PNs" firstAttribute="top" secondItem="psw-bq-vMY" secondAttribute="bottom" constant="20" id="HYl-1m-Y6C"/>
+                <constraint firstAttribute="trailing" secondItem="B8B-LT-PNs" secondAttribute="trailing" constant="50" id="JZ9-JQ-OVn"/>
+                <constraint firstItem="psw-bq-vMY" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="30" id="LGg-Gm-fYD"/>
+                <constraint firstAttribute="trailing" secondItem="e1b-LL-N8d" secondAttribute="trailing" constant="40" id="igP-6c-wIl"/>
+                <constraint firstAttribute="trailing" secondItem="psw-bq-vMY" secondAttribute="trailing" constant="30" id="oaa-aB-d58"/>
+                <constraint firstItem="psw-bq-vMY" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="sbk-I0-Vie"/>
+                <constraint firstItem="B8B-LT-PNs" firstAttribute="leading" secondItem="alh-bB-hDZ" secondAttribute="trailing" constant="100" id="wBs-pI-HRB"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="queding" destination="e1b-LL-N8d" id="zwY-8Q-rvH"/>
+                <outlet property="quxiao" destination="ZcE-UM-Vhz" id="etd-dk-fEH"/>
+            </connections>
+            <point key="canvasLocation" x="72.5" y="-85"/>
+        </view>
+    </objects>
+</document>
