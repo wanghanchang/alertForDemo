@@ -1,0 +1,20 @@
+//
+//  PrefixHeader.pch
+//  LiveRecorder
+//
+//  Created by 匹诺曹 on 17/3/22.
+//  Copyright © 2017年 匹诺曹. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "CommonConfig.h"
+#import <BlocksKit.h>
+#import <BlocksKit+UIKit.h>
+#import <Masonry.h>
+#import "UIColor+Hex.h"
+#import "CommonUtils.h"
+#import "AccountInfo.h"
+#import "PNCProgressHUD.h"
+#endif /* PrefixHeader_pch */

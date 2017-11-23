@@ -1,0 +1,21 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '8.0'
+
+target 'LiveRecorder' do
+  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+  # use_frameworks!
+
+  # Pods for LiveRecorder
+        pod 'BlocksKit', '~> 2.2.5'
+	pod 'Masonry', '~> 1.0.1'
+        pod 'SDWebImage', '~> 3.8.1'
+        pod 'FMDB', '~> 2.6.2'
+        pod 'MJRefresh', '~> 3.1.10'
+        pod 'AFNetworking', '~> 3.1.0'
+        pod 'NullSafe', '~> 1.2.2'
+	pod 'MMDrawerController'
+	pod 'HappyDNS', '~> 0.2'
+	pod 'AlipaySDK-2.0', '~> 15.0.2'
+	pod 'mp3lame-for-ios'
+        pod "Qiniu", "~> 7.1"
+end
